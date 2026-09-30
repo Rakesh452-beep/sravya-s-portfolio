@@ -70,7 +70,11 @@ export function Actions({
       <a
         href={mailtoHref()}
         onClick={onNavigate}
-        className={isCompact ? "pill pill-ghost !px-3.5 !py-2" : "pill pill-ghost"}
+        className={
+          isCompact
+            ? "hidden pill pill-ghost !px-3.5 !py-2 sm:inline-flex"
+            : "pill pill-ghost"
+        }
       >
         <Mail className="h-3.5 w-3.5" />
         Email in Outlook

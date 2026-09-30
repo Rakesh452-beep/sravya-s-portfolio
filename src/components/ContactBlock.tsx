@@ -24,7 +24,7 @@ export function ContactBlock({
 
       <a
         href={`mailto:${profile.email}`}
-        className="group mt-8 inline-flex items-center gap-3 border-b border-chalk/30 pb-1.5 text-[clamp(1.125rem,3vw,2.25rem)] font-medium tracking-[-0.03em] text-chalk transition-colors duration-300 hover:border-accent hover:text-accent"
+        className="group mt-8 inline-flex min-w-0 items-center gap-3 border-b border-chalk/30 pb-1.5 text-[clamp(1.125rem,3vw,2.25rem)] font-medium tracking-[-0.03em] text-chalk transition-colors duration-300 hover:border-accent hover:text-accent [overflow-wrap:anywhere]"
       >
         {profile.email}
         <ArrowUpRight className="h-6 w-6 transition-transform duration-400 group-hover:translate-x-1 group-hover:-translate-y-1" />
